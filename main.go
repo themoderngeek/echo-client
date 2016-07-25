@@ -8,8 +8,6 @@ import (
 )
 
 func main() {
-	//service := "localhost:2020"
-	//tcpAddr, err := net.ResolveTCPAddr("tcp4", service)
 	conn, err := net.Dial("tcp", "127.0.0.1:2020")
 	if err != nil {
 		println(err)
